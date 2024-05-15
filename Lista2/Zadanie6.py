@@ -5,20 +5,18 @@
 ### The input variable m is arbitrary. The m-parameter is provided as input by the user (use input).
 
 
-def skrypt():
-
-    a_1 = int(input("Podaj pierwsza liczbe ciagu: "))
-    a_n = int(input("Podaj ostatnia liczbe ciągu: "))
-    n = int(input("Podaj liczbę dlugości ciągu: "))
+def skrypt(a_1,a_n,n):
 
     S = ((a_1 + a_n) / 2) * n
-
     print("Suma ciągu wynosi: ",S)
 
 
 def main():
 
-    skrypt()
+    a_1 = int(input("Podaj pierwsza liczbe ciagu: "))
+    a_n = int(input("Podaj ostatnia liczbe ciągu: "))
+    n = int(input("Podaj liczbę dlugości ciągu: "))
+    skrypt(a_1,a_n,n)
 
 
 if __name__ == '__main__':
